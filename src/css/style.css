@@ -1383,10 +1383,11 @@ ul.clean {
 /********************************************* H.O.M.E *********************************************/
 /***************************************************************************************************/
 .main-display-home {
-  background-image: url("../../images/home-display-bg.jpg");
+  background-image: url("../../images/slider1.jpg");
   background-position: center center;
   background-size: 1740px 760px;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
 }
 .main-display-home .descp-general {
   margin-bottom: 2rem;
@@ -2115,187 +2116,12 @@ ul.clean {
 /***************************************************************************************************/
 /********************************************* A.B.O.U.T *******************************************/
 /***************************************************************************************************/
-.about-features .about-feature-each {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-@media only screen and (min-width : 577px) {
-  .about-features .about-feature-each {
-    margin-bottom: 0;
-  }
-}
-.about-features .about-feature-each .about-feature-icon {
-  margin-bottom: 1.5rem;
-}
-.about-features .about-feature-each .about-feature-icon svg {
-  width: 3rem;
-  height: 3rem;
+/* for slider arrows */
+.slick-prev, .slick-next{
+  z-index:1;
+  margin: 40px;
 }
 
-.about-us__section-each {
-  text-align: center;
-  margin-bottom: 2rem;
+.sb-added{
+  margin-left: 20%;
 }
-
-.about__tools-progress-bar .about__tool-each {
-  margin-bottom: 0.5rem;
-}
-.about__tools-progress-bar .about__tool-each .progress {
-  height: 1.5rem;
-}
-.about__tools-progress-bar .about__tool-each .progress .progress-bar {
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 1rem;
-  width: 90%;
-  flex: 0 0 90%;
-}
-.about__tools-progress-bar .about__tool-each .progress .progress-bar .progress-bar__title {
-  text-align: left;
-}
-.about__tools-progress-bar .about__tool-each .progress .progress-bar .progress-bar__percent {
-  text-align: right;
-}
-
-.progress-bar-general {
-  position: relative;
-  background-color: #E8E8E8;
-  height: 1.5rem;
-}
-.progress-bar-general:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background: #20d7a9;
-}
-.progress-bar-general * {
-  color: #FFFFFF;
-}
-.progress-bar-general .progress-bar-general__title,
-.progress-bar-general .progress-bar-general__percentage {
-  position: absolute;
-}
-.progress-bar-general .progress-bar-general__title {
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.progress-bar-general .progress-bar-general__percentage {
-  right: 1rem;
-}
-
-.progress-bar-general--lightroom:before {
-  animation: progress-90 2s normal forwards;
-  -webkit-animation: progress-90 2s normal forwards;
-}
-
-.progress-bar-general--photoshop:before {
-  animation: progress-95 2s normal forwards;
-  -webkit-animation: progress-95 2s normal forwards;
-}
-
-@-webkit-keyframes progress-90 {
-  0% {
-    right: 100%;
-  }
-  100% {
-    right: 10%;
-  }
-}
-@-webkit-keyframes progress-95 {
-  0% {
-    right: 100%;
-  }
-  100% {
-    right: 5%;
-  }
-}
-@keyframes progress-95 {
-  0% {
-    right: 100%;
-  }
-  100% {
-    right: 5%;
-  }
-}
-/***************************************************************************************************/
-/******************************************** /.A.B.O.U.T ******************************************/
-/***************************************************************************************************/
-/***************************************************************************************************/
-/************************************** D.E.V.I.C.E.S - C.S.S **************************************/
-/***************************************************************************************************/
-.mac-browser {
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-.mac-browser .mac-browser-header,
-.mac-browser .mac-browser-body {
-  padding: 0.75rem 0.5rem;
-  background: #f2f2f2;
-  border: 1px solid #ebebeb;
-}
-.mac-browser .mac-browser-header .mac-browser-controls ul {
-  display: -ms-flex;
-  display: flex;
-}
-.mac-browser .mac-browser-header .mac-browser-controls ul li:not(:last-child) {
-  margin-right: 0.25rem;
-}
-.mac-browser .mac-browser-header .mac-browser-controls ul li .mac-browser-control-each {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-}
-.mac-browser .mac-browser-header .mac-browser-controls ul li .mac-browser-control-each.mac-browser-control-close {
-  background-color: #F46956;
-}
-.mac-browser .mac-browser-header .mac-browser-controls ul li .mac-browser-control-each.mac-browser-control-maximize {
-  background-color: #F9C300;
-}
-.mac-browser .mac-browser-header .mac-browser-controls ul li .mac-browser-control-each.mac-browser-control-minimize {
-  background-color: #12CD34;
-}
-.mac-browser .mac-browser-body {
-  background-color: #FFFFFF;
-  padding-top: 0;
-  padding: 0;
-}
-
-/***************************************************************************************************/
-/************************************* /.D.E.V.I.C.E.S - C.S.S *************************************/
-/***************************************************************************************************/
-/***************************************************************************************************/
-/************************************* H.O.W - I.T - W.O.R.K.S *************************************/
-/***************************************************************************************************/
-.text-img-section-img .mac-browser, .text-img-section-img-narrow .mac-browser, .text-img-section-img-lg .mac-browser {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.how-it-works-step-1-img .mac-browser img {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/***************************************************************************************************/
-/************************************ /.H.O.W - I.T - W.O.R.K.S ************************************/
-/***************************************************************************************************/
-/***************************************************************************************************/
-/****************************************** S.E.C.T.I.O.N.S ****************************************/
-/***************************************************************************************************/
-.section-01-img {
-  max-width: 75%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/***************************************************************************************************/
-/***************************************** /.S.E.C.T.I.O.N.S ***************************************/
-/***************************************************************************************************/
-/*********************************************************************************************************************************/
-/*********************************************************** S.T.Y.L.E ***********************************************************/
-/*********************************************************************************************************************************/
